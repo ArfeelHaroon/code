@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        border: 2px solid;
+        margin: 2em auto;
+        border-radius: 5%;
+        padding: 10px;
+    }
+
+    label {
+        font-weight: 700;
+        margin: 1px 1em;
+    }
+
+    form input {
+        /* width: 50%; */
+        margin: 1em;
+        line-height: 26px;
+        font-size: large;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input[type="submit"],
+    input[type="reset"] 
+    {
+        width: max-content;
+        padding: 5px;
+        margin: auto;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <form action="">
+        <label for="use_name">Name</label>
+        <input type="text" name="user_name" placeholder="Enter your name..." />
+
+        <label for="password">password</label>
+        <input type="password" name="password" placeholder="Enter your name..." />
+
+        <label for="DOB">date of birth</label>
+        <input type="date" name="dob" placeholder="Enter your date of birth.." />
+
+        <div class="btn">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+        padding: 0;
+        margin: 0;
+    }
+    
+    table{
+          border: 1px solid black;
+          margin: auto;
+          width: 80%;
+          height:500px;
+          border-collapse: collapse; 
+    }
+    table td{
+          border: 1px solid black;
+          margin: 0;
+       
+    }
+    tr{
+        text-align: center;
+    }
+
+    .first_row{
+     background-color: #e1f4e9;
+    }
+    .second_row{
+        background-color: #ebebfc;
+    }
+    .third_row{
+    background-color: #dafdf7;
+    }
+.fourth_row{
+    background-color: #a4a4b0;
+}
+
+</style>
+<body>
+    <!-- use thead tbody -->
+    <!-- cellspacing="0" -->
+    <table>
+        <!-- <th>heading</th>
+        <th>heading-2</th>
+        <th>heading-3</th> -->
+
+         <th>first_row</th>
+        <tbody>
+            
+            <tr class="first_row">
+                <td>1</td>
+                <td colspan="5">1-A</td>
+            </tr>
+        </tbody>
+
+        <th>second_row</th>
+            <!-- <tbody> -->
+               <tr class="second_row">
+                    <td rowspan="3">2</td>
+                    <td>2-A</td>
+                    <td>2-B</td>
+                    <td colspan="2">2-C</td>
+                    <td>2-D</td>
+                 </tr>
+            <!-- </tbody> -->
+        <th>third_row</th>
+        <tbody>
+            <tr class="third_row">
+                <td rowspan="2" colspan="2">3</td>
+                <td rowspan="2">3-A</td>
+                <td>3-B</td>
+                <td colspan="2">3-C</td>
+            </tr>
+        </tbody>
+        <th>fourth_row</th>
+         <tbody>
+                <tr class="fourth_row">
+                    <td>4</td>
+                    <td colspan="5">4-A</td>
+                </tr>
+         </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<style>
+    table {
+        border: 1px solid;
+        border-collapse: collapse;
+        height: 200px;
+        text-align: center;
+        margin: auto;
+        width:70%;
+    }
+
+    table td {
+        border: 1px solid;
+    }
+
+    table th {
+        border: 1px solid;
+    }
+
+    table .second{
+        height: 20px;
+        margin: auto;
+    }
+
+    table .second td{
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <table>
+
+        <th class="collapse" colspan="3">Title1</th>
+        <th>Title2</th>
+        <th>Title3</th>
+
+
+
+        <!-- <tbody> -->
+            <tr>
+                <td colspan="3">
+                <table class="second">
+                    <td>C-2-B</td>
+                    <td>C-2-C</td>
+                    <td>C-2-C</td>
+                </table>
+               </td>
+                <td>C-2-B</td>
+                <td>C-2-C</td>
+
+            </tr>
+            <tr class="collapse">
+                <td colspan="3">C-4</td>
+                <td>C-5</td>
+                <td>C-6</td>
+
+            </tr>
+        <!-- </tbody> -->
+    </table>
+</body>
+
+</html>
+
+<!-- 
+<tbody>
+    <tr>
+        <td>C-1</td>
+        <td>C-2</td>
+        <td>C-3</td>
+
+
+        <td>C-2-B</td>
+        <td>C-2-C</td>
+    </tr>
+    <tr class="collapse">
+        <td colspan="3">C-4</td>
+        <td>C-5</td>
+        <td>C-6</td>
+
+    </tr>
+</tbody> -->
